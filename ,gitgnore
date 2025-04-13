@@ -1,0 +1,15 @@
+# Arduino
+*.hex
+*.elf
+
+# Sketch files
+*.ino.*
+
+# Mac
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Backup files
+*~
