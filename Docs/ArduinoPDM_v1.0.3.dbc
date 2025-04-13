@@ -1,0 +1,23 @@
+VERSION ""
+
+BS_:
+
+BU_:
+
+BO_ 1616 PDM_Status: 8 Vector__XXX
+ SG_ Relay8 : 7|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay7 : 5|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay6 : 6|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay5 : 0|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay4 : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay3 : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay2 : 3|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ Relay1 : 4|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 1696 PDM_ACK: 6 Vector__XXX
+ SG_ ACK_Message_1 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACK_Message_2 : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACK_Message_3 : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACK_Message_4 : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACK_Message_5 : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ ACK_Message_6 : 40|8@1+ (1,0) [0|255] "" Vector__XXX
