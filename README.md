@@ -7,7 +7,7 @@ Första versionen av en CAN-styrd Power Distribution Module (PDM), byggd med Ard
 - Styrning via CAN (1 Mbps)
 - Toggle- och direktstyrning
 - Statusmeddelanden via CAN
-- Konfigurerbar via CAN
+- Konfigurerbar via CAN (Kräver just nu PCAN-USB)
 - EEPROM-lagring av konfiguration (valfritt)
 
 ## Hårdvara
