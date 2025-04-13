@@ -33,7 +33,7 @@ Detta är den frysta versionen 1.0.3 av firmware för ArduinoPDM. Den är nu mar
 
 ## 🧱 Använda `.dbf`/`.dbc`
 
-BUSMASTER testad med både `.dbf` (DatabaseEditor-format) och `.dbc` (bitmappade signaler per relä). Rekommenderad `.dbc` finns i `/dbc/`.
+BUSMASTER testad med både `.dbf` (DatabaseEditor-format) och `.dbc` (bitmappade signaler per relä). Rekommenderad `.dbc` finns i `/Docs/`.
 
 ## 🛠 Mjukvaruversion
 
