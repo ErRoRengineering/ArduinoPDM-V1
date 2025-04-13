@@ -1,0 +1,94 @@
+# PDM Config Tool v0.3.4
+
+**Författare:** Jan Lindvall / ErRoR Engineering  
+**Senaste version:** 0.3.4  
+**Plattform:** Python (Tkinter GUI)  
+**Syfte:** Konfigurationsverktyg för CAN-styrd PDM-modul baserad på Arduino Nano och MCP2515
+
+---
+
+## 🎯 Funktioner i version 0.3.4
+
+- Visuellt gränssnitt för att konfigurera relälogik (toggle/direkt)
+- Stöd för upp till 8 reläutgångar
+- Visar realtidsstatus för reläer via CAN
+- Hämtar och visar firmwareversion från enheten
+- Skickar temporära inställningar (utan att spara)
+- Sparar inställningar till EEPROM i PDM
+- Ändrar CAN-ID och statusmeddelandefrekvens
+- Automatisk polling av relästatus i bakgrunden
+
+---
+
+## 🛠 Teknik och beroenden
+
+- Python 3.x
+- `python-can` (kommunikation via PCAN-USB eller ECUMaster USBtoCAN)
+- Tkinter (standard i Python)
+
+Installera beroenden:
+```bash
+pip install python-can
+```
+
+---
+
+## 🧩 Anslutningsdetaljer
+
+- Standard CAN-hastighet: **1 Mbit/s**
+- Standard CAN-ID för config: `0x660`
+- Standard CAN-ID för status: `0x650`
+- Ändringsbar direkt i GUI:t
+
+---
+
+## 🖥 GUI-komponenter
+
+- CheckBoxar för relä 1–8 (toggle-läge)
+- Textinmatning för:
+  - Lyssnings-CAN-ID
+  - Statusintervall (ms)
+  - CAN-ID för statusmeddelande
+- Knappar:
+  - **Läs från enhet** (GET_CONFIG)
+  - **Skicka tillfällig konfig** (SET_TOGGLE, SET_CANID, SET_RATE)
+  - **Spara till EEPROM** (SAVE_CONFIG)
+  - **Hämta FW-version** (GET_FW_VERSION)
+- Visuell statusindikering per relä (grön/röd)
+- Statusrad längst ner i fönstret
+
+---
+
+## 🗂 Filstruktur
+
+- `PDM_ConfigTool_0.3.4.py`  
+  Huvudprogrammet (GUI)
+- `VERSION`  
+  Innehåller aktuell programversion (läses in av GUI:t)
+
+---
+
+## 🔄 Kompatibilitet
+
+- Firmware-version **1.0.1 eller senare** krävs för full funktionalitet
+
+---
+
+## 🔧 Planerade funktioner
+
+- DBC-export
+- Felindikering (timeout, ogiltigt svar etc.)
+
+---
+
+## 📜 Licens
+Detta projekt är licensierat under [MIT-licensen](https://opensource.org/licenses/MIT).
+
+---
+
+## 📬 Kontakt
+Vid frågor eller buggrapporter, kontakta:  
+**Jan Lindvall**
+jan.lindvall@visst.net  
+ErRoR Engineering
+
