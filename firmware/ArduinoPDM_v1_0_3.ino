@@ -2,6 +2,7 @@
  * Arduino CANbus – PDM-styrning med konfig + statusutskick
  * Författare: Jan Lindvall / ErRoR Engineering
  * FW Version 1.0.3 – med EEPROM-lagring av relayState[] + switchmap
+ Licens: MIT
  **************************************************************/
 
 #include <SPI.h>
